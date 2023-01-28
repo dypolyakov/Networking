@@ -10,10 +10,10 @@ struct Result: Decodable {
 }
 
 struct Data: Decodable {
-    let data: Heroes
+    let data: HeroList
 }
 
-struct Heroes: Decodable {
+struct HeroList: Decodable {
     let heroes: [Hero]
 }
 
