@@ -26,7 +26,6 @@ extension ViewController {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
-            print(data)
             
             do {
                 let heroes = try JSONDecoder().decode(Result.self, from: data)
